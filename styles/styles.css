@@ -106,6 +106,7 @@ body {
 
 .presentacion__boton2:disabled{
     background: #898989;
+    cursor:default;
 }
 
 .presentacion__caja{
