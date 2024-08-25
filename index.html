@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <main>
+    <nav class="presentacion__log"><img src="/assets/Logo.png" alt="Logo Alura"></nav>
+    <main class="presentacion">
+        <section> 
+            <textarea name="input_text" id="input_text" class="presentacion__text_area">Ingrese el texto aqui</textarea>
+            <P class="presentacion__nota"> <img src="/assets/bi_exclamation-circle-fill.png" alt="Icono info"> Solo letras minúsculas y sin acentos </P>
+            <div class="presentacion__botones"> 
+                <button class="presentacion__boton1">¡Encriptar!</button>
+                <button class="presentacion__boton2" id="desencriptar" disabled>¡Desencriptar!</button>
+            </div>
+        </section>
         <div class="presentacion__caja">
             <img class="presentacion__caja__imagen" src="/assets/Muñeco.png" alt="Esperando texto encriptado">
             <h2 class="presentacion__caja__texto">
