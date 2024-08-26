@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <nav class="presentacion__log"><img src="/assets/Logo.png" alt="Logo Alura"></nav>
-    <main class="presentacion">
-        <section> 
-            <textarea name="input_text" id="input_text" class="presentacion__text_area">Ingrese el texto aqui</textarea>
-            <P class="presentacion__nota"> <img src="/assets/bi_exclamation-circle-fill.png" alt="Icono info"> Solo letras minúsculas y sin acentos </P>
+    <nav class="presentacion__log">
+        <a href="index.html"><img src="/assets/Logo.png" alt="Logo Alura"></a>
+    </nav>
+    <main>
+        <input name="input_text" id="input_text" class="presentacion__text_area" placeholder="Ingrese el texto aqui"></input>
+        <section class="presentacion__section"> 
+            <P class="presentacion__nota"> <img src="/assets/bi_exclamation-circle-fill.png" alt="Icono info">Solo letras minúsculas y sin acentos </P>
             <div class="presentacion__botones"> 
-                <button class="presentacion__boton1">¡Encriptar!</button>
-                <button class="presentacion__boton2" id="desencriptar" disabled>¡Desencriptar!</button>
+                <button class="presentacion__boton" onclick="encriptar();" id="encriptar"><b>¡Encriptar!</b></button>
+                <button class="presentacion__boton1" id="desencriptar" onclick="desencriptarTexto()"><b>¡Desencriptar!</b></button>
             </div>
         </section>
-        <div class="presentacion__caja">
+        <div class="presentacion__caja" id="div__inicial">
             <img class="presentacion__caja__imagen" src="/assets/Muñeco.png" alt="Esperando texto encriptado">
             <h2 class="presentacion__caja__texto">
                  <p class="presentacion__caja__texto1">Ningún mensaje fue encontrado</p>
                  <p class="presentacion__caja__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </h2>
         </div>
+        <div class="presentacion__caja__encriptado" id="div__encriptado">
+            <textarea class="presentacion__encriptado" name="encriptado" id="result__encriptado" readonly></textarea>
+            <button class="presentacion__boton2" id="copiar" onclick="copiarresultado()"><b>Copiar</b></button>
+        </div>
     </main>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
