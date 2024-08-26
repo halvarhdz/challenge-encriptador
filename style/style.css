@@ -195,12 +195,6 @@ body {
 
 @media (max-width: 1200px) {
 
-    *{
-        padding: 0;
-        margin: 0;
-        font-size: 1rem;
-    }
-
     .presentacion__log{
         padding: 2%;
     }
@@ -223,13 +217,6 @@ body {
         padding: 0 3%;
     }
 
-    .presentacion__section{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .presentacion__caja__imagen{
         padding: 2rem;
         visibility: hidden;
@@ -249,7 +236,7 @@ body {
     .presentacion__caja{
         position:absolute;
         width: 60%;
-        height: 50%;
+        height: 40%;
         left: 25%;
         top: 100%;
         box-shadow: 0rem 1.5rem 2rem -0.5rem var(--color-secundario);
@@ -260,61 +247,61 @@ body {
         flex-direction: column;
     }
 
-    .presentacion__caja__encriptado{
-        position:absolute;
-        width: 70%;
-        height: 30%;
-        left: 25%;
-        top: 90%;
-        box-shadow: 0rem 1.5rem 2rem -0.5rem var(--color-secundario);
-        border-radius: 2rem;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        align-items: center;
-        visibility: hidden;
-    }
-
     .presentacion__caja__texto{
         display: flex;
         flex-direction: column;
         align-items:safe;
-        padding: 50%;
-        width: 50%;
-        height: 50%;
+        padding: 10%;
+        width: 70%;
+        height: 40%;
         left: 1032px;
-        top: 50%;
+        top: 30%;
         font-family: var(--fuente-montserrat);
         text-decoration: none;
         color: var(--color-secundario);
         text-align: center;
         gap: 2.0625rem;
+        margin-bottom: 25rem;
     }
 
     .presentacion__caja__texto1{
         height: 58px;
-        font-size: 150%;
+        font-size: 120%;
         font-weight: 700;
-        padding: 14px;
+        padding: 10px;
     }
     
     .presentacion__caja__texto2{
         height: 48px;
-        font-size: 150%;
+        font-size: 120%;
         font-weight: 400;
     }
 
+    .presentacion__caja__encriptado{
+        position:absolute;
+        width: 60%;
+        height: 40%;
+        left: 25%;
+        top: 100%;
+        box-shadow: 0rem 1.5rem 2rem -0.5rem var(--color-secundario);
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        align-content: center;
+    }
 
     .presentacion__encriptado{
         font-family: var(--fuente-montserrat);
-        font-size: 1.8rem;
+        font-size: 120%;
         resize:unset;
         background-color: var(--color-secundario);
         display: flex;
         flex-direction:row;
         text-align: justify;
         width: 50%;
-        height: 50%;
+        height: 30%;
         margin-bottom: auto;
         margin-top: 1rem;
     }
