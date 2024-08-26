@@ -210,11 +210,13 @@ body {
         resize:unset;
         background-color: var(--color-secundario);
         display: flex;
-        width: 50%;
-        margin: 15%;
+        width: 20rem;
+        margin: 12%;
+        margin-left: 10.3rem;
         margin-top: 02rem;
-        height: 50%;
-        padding: 0 3%;
+        /*height: 50%;*/
+        padding: 1% 3%;
+        box-sizing:content-box;
     }
 
     .presentacion__caja__imagen{
@@ -228,7 +230,7 @@ body {
         width: 50%;
         height: 50%;
         left: 20%;
-        top: 65%;
+        top: 70%;
         font-family: var(--fuente-montserrat);
         font-size: 100%;
     }
@@ -236,9 +238,9 @@ body {
     .presentacion__caja{
         position:absolute;
         width: 60%;
-        height: 40%;
+        height: 30%;
         left: 25%;
-        top: 100%;
+        top: 30%;
         box-shadow: 0rem 1.5rem 2rem -0.5rem var(--color-secundario);
         border-radius: 2rem;
         align-items: center;
@@ -261,7 +263,7 @@ body {
         color: var(--color-secundario);
         text-align: center;
         gap: 2.0625rem;
-        margin-bottom: 25rem;
+        margin-bottom: 30rem;
     }
 
     .presentacion__caja__texto1{
@@ -280,9 +282,9 @@ body {
     .presentacion__caja__encriptado{
         position:absolute;
         width: 60%;
-        height: 40%;
+        height: 30%;
         left: 25%;
-        top: 100%;
+        top: 30%;
         box-shadow: 0rem 1.5rem 2rem -0.5rem var(--color-secundario);
         border-radius: 2rem;
         display: flex;
