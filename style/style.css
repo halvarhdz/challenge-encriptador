@@ -248,13 +248,12 @@ body {
 
     .presentacion__caja{
         position:absolute;
-        width: 50%;
-        height: 30%;
+        width: 60%;
+        height: 50%;
         left: 25%;
-        top: 90%;
+        top: 100%;
         box-shadow: 0rem 1.5rem 2rem -0.5rem var(--color-secundario);
         border-radius: 2rem;
-        justify-content:flex-end;
         align-items: center;
         align-content: center;
         display: flex;
